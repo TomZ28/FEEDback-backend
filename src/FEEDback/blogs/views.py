@@ -89,7 +89,7 @@ class LikeBlogView(CreateAPIView):
 class UnlikeBlogView(DestroyAPIView):
     """
     Delete the BlogLike relationship between the user and the Blog with the given id,
-    if it exists. Becrements the blog's 'likes' count. Requires that the user is
+    if it exists. Decrements the blog's 'likes' count. Requires that the user is
     authenticated.
     """
     permission_classes = (IsAuthenticated,)
