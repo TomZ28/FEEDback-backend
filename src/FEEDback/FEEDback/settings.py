@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'menuitems',
     'rest_framework',
     'corsheaders',
+    'drf_yasg'
 ]
 
 AUTH_USER_MODEL = 'users.FEEDbackUser'
@@ -78,6 +79,14 @@ MIDDLEWARE = [
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
+
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'Basic': {
+            'type': 'basic'
+        }
+    }
+}
 
 ROOT_URLCONF = 'FEEDback.urls'
 
