@@ -1,0 +1,5 @@
+*__pycache__*
+src/FEEDback/venv/*
+src/FEEDback/db.sqlite3
+src/FEEDback/media/*
+.DS_Store
